@@ -3,7 +3,6 @@ object Frequency:
       val t =
          if texts.isEmpty then ""
          else texts.reduce((s, s2) => s.concat(s2))
-
       "[a-zöü]*".r
          .findAllIn(t.toLowerCase)
          .mkString
