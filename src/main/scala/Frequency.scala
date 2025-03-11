@@ -6,6 +6,6 @@ object Frequency:
       "[a-zöü]*".r
          .findAllIn(t.toLowerCase)
          .mkString
-         .to(scala.collection.Seq)
+         .toSeq
          .groupBy(identity)
          .map((k, v) => k -> v.size)
